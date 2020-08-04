@@ -1,0 +1,76 @@
+:root {
+	--color1: #55ff55;
+	--color2: #aa0aaa;
+	--color3: #ff55ff;
+	--color4: #ffffff;
+	--color5: #55ffff;
+	--color6: #0000aa;
+}
+		
+@font-face {
+	font-family: 'Retron2000';
+	src: url('res/font.ttf') format('truetype');
+}
+
+body {
+	background: url('res/bg.gif') no-repeat fixed center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	height: 100%;
+	overflow: hidden
+}
+
+imp {
+	font: 9pt Retron2000;
+	text-decoration: underline;
+	color: var(--color1); 
+}
+
+.quad {
+	font: 12pt Retron2000;
+	color: var(--color4);
+	width: 75%;
+	height: 75%;
+	border: solid var(--color3);
+	background: var(--color2);
+	opacity: 65%;	
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 5px;
+}
+
+.headertext {
+	font: 15pt Retron2000;
+	text-align: center;
+}
+
+.textcenter {
+	font: 8pt Retron2000;
+	text-align: center;
+}
+
+.text {
+	font: 8pt Retron2000;
+	margin-left: 1px;
+}
+
+.backURL {
+	font: 10pt Retron2000;
+	text-align: center;
+}
+
+.button {
+	background-color: var(--color5);
+	border: none;
+	padding: 2px 20px;
+	display: inline-block;
+ 	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	color: var(--color6);
+	border-radius: 5px;
+}

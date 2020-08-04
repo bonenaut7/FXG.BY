@@ -2,134 +2,38 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="fxg.css">
+		<script type="text/javascript" src="fxg.js"></script>
 		<title>FXG</title>
 		<font>
 	</head>
 	<body>
 		<div class="quad">
-			<script>
-				var colors = [
-				//  IMP   |     BG   | BG BORDER| TEXT RECT|   BTN BG |  BTN TEXT
-				['#55ff55', '#aa0aaa', '#ff55ff', '#ffffff', '#55ffff', '#0000aa'], 
-				['#000000', '#efefef', '#bfbfbf', '#464646', '#808080', '#ffffff'], 
-				['#066f06', '#7fabca', '#6092b5', '#ffffff', '#b05959', '#ffffff'],
-				['#55ff55', '#aa0aaa', '#ff55ff', '#ffffff', '#55ffff', '#0000aa'], 
-				['#55ff55', '#aa0aaa', '#ff55ff', '#ffffff', '#04ffa5', '#b05959'], 
-				['#55ff55', '#0d648d', '#1586bb', '#ffffff', '#bba715', '#000000'],
-				['#55ff55', '#aa0aaa', '#ff55ff', '#ffffff', '#55ffff', '#0000aa']
-				];
-				var randNum = rand(6);
-				document.body.style.backgroundImage = "url('bg" + randNum + ".gif')";
-				document.documentElement.style.setProperty('--color1', colors[randNum][0]);
-				document.documentElement.style.setProperty('--color2', colors[randNum][1]);
-				document.documentElement.style.setProperty('--color3', colors[randNum][2]);
-				document.documentElement.style.setProperty('--color4', colors[randNum][3]);
-				document.documentElement.style.setProperty('--color5', colors[randNum][4]);
-				document.documentElement.style.setProperty('--color6', colors[randNum][5]);
-				function rand(max) {
-					return Math.floor((Math.random() * max));
-				}
-			</script>
+			<script> apply(); </script>
 			<div class="headertext">FXG.BY - Для тех кому не похуй, а интересно.</div>
-			<div class="textm">Спасибо всем кто не насрал, а особенно тем кто ниже</div>
-			<div class="textm"/>Саня - exiphase
-			<div class="textm"/>Стёпа - doffel
-			<div class="textm"/>Рома - nictrace
-			<div class="textm"/>Максим - akbaulet
-			<div class="textm"/>Никита - reygasai
-			<div class="textm"/>'режим инкогнито в iexplorer' - kiriharu
-			<div class="textm"/>Даня - tp3rson
-			<div class="textm"/>Илья - kroxalimba
-			<div class="textm"/>Володя - Vovan
-			<div class="textm"/>Женя - rmcj
-			<div class="textm"/>Вова - Adept
-			<div class="textm"/>Витя Прохоров - Vitek228
-			<div class="textm"/>Саня - Jok1r
-			<div class="textm"/>Даня - danilpakhan
-			<div class="textm"/>Вася - SlenderMix
-			<div class="textm"/>Муса - kynth
-			<div class="textm"/>Валера - OpenClade
-			<div class="textm"/>Денис - koldan
-			<div class="textm"/>и всем тем кто не вошел в этот список но хорошо со мной общался...
-			<div class="text"><imp>P.S. не вундовер, не ты :D</imp></div>
-			<div class="back"><a href="index.html" class="button">Назад</a></div>
-			<div class="text">Copywho? 2019-2020 FXG.BY <a href="https://github.com/fxgaming/FXG.BY">GIT</a></div>
+			<div class="textcenter">Спасибо всем кто не насрал, а особенно тем кто ниже</div>
+			<div class="textcenter"/>Саня - exiphase
+			<div class="textcenter"/>Стёпа - doffel
+			<div class="textcenter"/>Рома - nictrace
+			<div class="textcenter"/>Максим - akbaulet
+			<div class="textcenter"/>Никита - reygasai
+			<div class="textcenter"/>'режим инкогнито в iexplorer' - kiriharu
+			<div class="textcenter"/>Даня - tp3rson
+			<div class="textcenter"/>Илья - kroxalimba
+			<div class="textcenter"/>Володя - Vovan
+			<div class="textcenter"/>Женя - rmcj
+			<div class="textcenter"/>Вова - Adept
+			<div class="textcenter"/>Витя Прохоров - Vitek228
+			<div class="textcenter"/>Саня - Jok1r
+			<div class="textcenter"/>Даня - danilpakhan
+			<div class="textcenter"/>Вася - SlenderMix
+			<div class="textcenter"/>Муса - kynth
+			<div class="textcenter"/>Валера - OpenClade
+			<div class="textcenter"/>Денис - koldan
+			<div class="textcenter"/>и всем тем кто не вошел в этот список но хорошо со мной общался...
+			<div class="textcenter"><imp>P.S. не вундовер, не ты :D</imp></div>
+			<div class="backURL"><a href="index.html" class="button">Назад</a></div>
+			<div class="textcenter">Copywho? 2019-2020 FXG.BY <a href="https://github.com/fxgaming/FXG.BY">GIT</a></div>
 		</div>
 	</body>
-	<style>
-	:root {
-			--color1: #55ff55;
-			--color2: #aa0aaa;
-			--color3: #ff55ff;
-			--color4: #ffffff;
-			--color5: #55ffff;
-			--color6: #0000aa;
-		}
-		
-		@font-face {
-			font-family: 'Retron2000';
-			src: url('font.ttf') format('truetype');
-		}
-		
-		body {
-			background: url("bg.gif") no-repeat center center fixed;
-  			background-size: cover;
-			-webkit-background-size: cover;
-  			height: 100%;
-  			overflow: hidden;
-  		}
-  		
-		imp {
-			font: 9pt Retron2000;
-			text-decoration: underline;
-			color: var(--color1); 
-		}
-		
-		.quad {
-			font: 12pt Retron2000;
-			color: var(--color4);
-			width: 75%;
-			height: 75%;
-			border: solid var(--color3);
-			background: var(--color2);
-			opacity: 75%;	
-			margin-left: 12.5%;
-			margin-right: 12.5%;
-			margin-top: 5%;
-			margin-bottom: 5%;
-		}
-		
-		.headertext {
-			font: 15pt Retron2000;
-			text-align: center;
-		}
-		
-		.text {
-			font: 8pt Retron2000;
-			margin-left: 1px;
-		}
-		
-		.textm {
-			font: 8pt Retron2000;
-			text-align: center;
-		}
-		
-		.back {
-			font: 10pt Retron2000;
-			text-align: center;
-		}
-		
-		.button {
-			background-color: var(--color5);
-			border: none;
-  			padding: 2px 20px;
-  			display: inline-block;
- 		 	font-size: 16px;
-  			margin: 4px 2px;
-  			cursor: pointer;
-  			text-align: center;
-  			text-decoration: none;
-  			color: var(--color6);
-		}
-	</style>
 </html>
